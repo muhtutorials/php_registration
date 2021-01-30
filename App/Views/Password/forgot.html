@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Forgot password{% endblock %}
+
+{% block body %}
+
+<form method="post" action="/password/request-reset" id="formSignup">
+    <div class="form-group">
+        <label for="inputEmail">Email address</label>
+        <input type="email" id="inputEmail" name="email" required autofocus class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}
